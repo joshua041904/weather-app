@@ -62,7 +62,7 @@ function displayWeather(json){
     weatherDetails.style.display = '';
     weatherBox.classList.add('fadeIn');
     weatherDetails.classList.add('fadeIn');
-    container.style.height = '630px';
+    container.style.height = '670px';
 }
 
 search.addEventListener('click', () => {
@@ -100,13 +100,13 @@ convertButton.addEventListener('click', () => {
 
     const temperature = document.querySelector('.weather-box .temperature');
 
-    //if we want to convert to celsius
+    //if we want to convert to fahrenheit
     if(isCelsius){
         const tempInFahrenheit = toFahrenheit(tempInCelsius);
         temperature.innerHTML = `${parseInt(tempInFahrenheit)}<span>°F</span>`;
         convertButton.innerText = 'Convert to Celsius';
     }
-    //if we want to convert to fahrenheit
+    //if we want to convert to celsius
     else{
         temperature.innerHTML = `${parseInt(tempInCelsius)}<span>°C</span>`;
         convertButton.innerText = 'Convert to Fahrenheit'; 
