@@ -113,6 +113,7 @@ convertButton.addEventListener('click', () => {
     }
 
     //update isCelcius
+    //testing
     isCelsius = !isCelsius;
  });
 
