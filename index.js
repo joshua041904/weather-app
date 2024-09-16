@@ -112,6 +112,7 @@ convertButton.addEventListener('click', () => {
         convertButton.innerText = 'Convert to Fahrenheit'; 
     }
 
+    //update isCelcius
     isCelsius = !isCelsius;
  });
 
